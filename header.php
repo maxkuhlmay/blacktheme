@@ -22,34 +22,49 @@
 
     <!-- Customize Farben setzen -->
     <style type="text/css">
-        body {
-            background-color: <?php echo esc_attr(
+        :root {
+            --_primary-color: <?php echo esc_attr(
                 get_theme_mod("theme_primary_color")
             ); ?>;
-            color: <?php echo esc_attr(
+            --_secondary-color: <?php echo esc_attr(
                 get_theme_mod("theme_foreground_color")
             ); ?>;
+
+            --_accent-color: <?php echo esc_attr(
+                get_theme_mod("theme_accent_color")
+            ); ?>;
+
+            --_background-color: var(--_primary-color);
+            --_color: var(--_secondary-color);
         }
     </style>
     <header>
-        <?php if (get_theme_mod("theme_logo")): ?>
-        <div class="site-logo">
-            <img src="<?php echo esc_url(
-                get_theme_mod("theme_logo")
-            ); ?>" alt="<?php bloginfo("name"); ?>">
-        </div>
-        <?php else: ?>
-            <!-- TODO: Blog-Info anzeigen und im Bild auch -->
-        <?php endif; ?>
 
-        <h1><?php bloginfo("name"); ?></h1>
-        <nav aria-label="Hauptnavigation">
-            <?php wp_nav_menu([
-                "theme_location" => "primary",
-                "container" => "ul",
-                "menu_class" => "navigation",
-            ]); ?>
-        </nav>
-        <!--  Suche -->
-        <?php get_search_form(); ?>
+        <div class="header-container">
+            <div class="blog-info">
+                <?php if (get_theme_mod("theme_logo")): ?>
+                <div class="site-logo">
+                    <img src="<?php echo esc_url(
+                        get_theme_mod("theme_logo")
+                    ); ?>" alt="<?php bloginfo("name"); ?>">
+                </div>
+                <?php else: ?>
+                    <!-- TODO: Blog-Info anzeigen und im Bild auch -->
+                <?php endif; ?>
+                <h1><?php bloginfo("name"); ?></h1>
+            </div>
+            <div class="blog-navigation">
+                <nav aria-label="Hauptnavigation">
+                    <?php wp_nav_menu([
+                        "theme_location" => "primary",
+                        "container" => "ul",
+                        "menu_class" => "navigation",
+                    ]); ?>
+                </nav>
+                <!--  Suche -->
+                <?php get_search_form(); ?>
+            </div>
+
+        </div>
+
     </header>

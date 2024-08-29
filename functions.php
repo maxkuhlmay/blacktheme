@@ -114,6 +114,18 @@ function theme_customize_register($wp_customize)
             ]
         )
     );
+
+    $wp_customize->add_setting("theme_accent_color", [
+        "default" => "#98fb98",
+    ]);
+
+    $wp_customize->add_control(
+        new WP_Customize_Color_Control($wp_customize, "theme_accent_color", [
+            "label" => __("Akzentfarbe", "theme"),
+            "section" => "theme_colors",
+            "settings" => "theme_accent_color",
+        ])
+    );
 }
 
 function theme_widgets_init()

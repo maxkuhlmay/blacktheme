@@ -5,10 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/maxkuhlmay/blacktheme.git"
-  },
+  "repositoryUrl": "https://github.com/maxkuhlmay/blacktheme.git",
   "author": "Maximilian Kuhlmay",
   "license": "ISC",
   "bugs": {

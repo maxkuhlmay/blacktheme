@@ -1,3 +1,10 @@
+# 1.0.0 (2024-08-29)
+
+
+### Features
+
+* add basic files ([74c724a](https://github.com/maxkuhlmay/blacktheme/commit/74c724abe55022df755ae14021149b2fe9cd2563))
+
 # Changelog
 
 ## 1.1.0 - 2024-08-30

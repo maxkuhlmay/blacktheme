@@ -1,4 +1,13 @@
-<?php get_header(); ?>
+<?php
+/**
+ * Search Results Template
+ * Author: Dein Name
+ * Created: 2024-08-24
+ *
+ * Dieses Template zeigt Suchergebnisse an.
+ */
+
+get_header(); ?>
 <h1>Suchergebnisse für: <?php echo get_search_query(); ?></h1>
 
 <?php if (have_posts()): ?>

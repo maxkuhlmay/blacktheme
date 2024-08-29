@@ -1,3 +1,13 @@
+<?php
+/**
+ * Footer Template
+ * Author: Dein Name
+ * Created: 2024-08-24
+ *
+ * Dieses Template zeigt den Fußbereich der Seite an.
+ */
+?>
+
 <footer>
 
     <p>&copy; <?php echo date("Y"); ?> <?php bloginfo("name"); ?></p>

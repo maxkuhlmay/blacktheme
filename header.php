@@ -51,13 +51,5 @@
             ]); ?>
         </nav>
         <!--  Suche -->
-        <!-- <form role="search" method="get" class="search-form" action="<?php echo home_url(
-            "/"
-        ); ?>">
-            <label>
-                <input type="search" class="search-field" placeholder="Suche nach…" value="<?php echo get_search_query(); ?>" name="s" />
-            </label>
-            <button type="submit" class="search-submit">Suche</button>
-        </form> -->
         <?php get_search_form(); ?>
     </header>

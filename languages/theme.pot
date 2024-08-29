@@ -1,0 +1,72 @@
+# Copyright (C) 2024 Maximilian Kuhlmay
+# This file is distributed under the same license as the Black Theme theme.
+msgid ""
+msgstr ""
+"Project-Id-Version: Black Theme 1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/theme\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-08-29T10:59:32+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.11.0\n"
+"X-Domain: theme\n"
+
+#. Theme Name of the theme
+#: style.css
+msgid "Black Theme"
+msgstr ""
+
+#. Description of the theme
+#: style.css
+msgid "Ein einfaches CSS-Only WordPress-Theme mit grundlegenden Funktionen."
+msgstr ""
+
+#. Author of the theme
+#: style.css
+msgid "Maximilian Kuhlmay"
+msgstr ""
+
+#: functions.php:48
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:49
+msgid "Footer menu"
+msgstr ""
+
+#: functions.php:58
+msgid "Logo"
+msgstr ""
+
+#: functions.php:66
+msgid "Logo hochladen"
+msgstr ""
+
+#: functions.php:75
+msgid "Farben"
+msgstr ""
+
+#: functions.php:85
+msgid "Hintergrundfarbe"
+msgstr ""
+
+#: functions.php:101
+msgid "Vordergrundfarbe"
+msgstr ""
+
+#: functions.php:112
+msgid "Haupt-Sidebar"
+msgstr ""
+
+#: home.php:21
+#: template-parts/content-post.php:9
+msgid "Zurück"
+msgstr ""
+
+#: home.php:22
+#: template-parts/content-post.php:10
+msgid "Weiter"
+msgstr ""

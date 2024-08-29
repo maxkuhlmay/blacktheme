@@ -1,7 +1,12 @@
-<!--
-    Datei:          single.php
-    Beschreibung:   Vorlage für einzelne Beiträge
--->
+<?php
+/**
+ * Single Post Template
+ * Author: Dein Name
+ * Created: 2024-08-24
+ *
+ * Dieses Template zeigt einen einzelnen Beitrag an.
+ */
+?>
 
 <?php get_header(); ?>
 

@@ -7,7 +7,6 @@
  * Diese Datei enthält Funktionen für die Unterstützung von
  * Menüs, Widgets, Theme-Customizer und mehr.
  */
-
 function theme_enqueue_scripts()
 {
     // CSS-Dateien einbinden
@@ -40,6 +39,20 @@ function theme_enqueue_scripts()
 
 function theme_setup()
 {
+    // i18n
+    load_theme_textdomain("theme", get_template_directory() . "/languages");
+
+    // Post-Thumbnails aktivieren
+    add_theme_support("post-thumbnails");
+
+    // HTML5 Unterstützung
+    add_theme_support("html5", [
+        "search-form",
+        "comment-form",
+        "gallery",
+        "caption",
+    ]);
+
     // Unterstützung für Menüs hinzufügen
     register_nav_menus([
         "primary" => __("Primary Menu", "theme"),

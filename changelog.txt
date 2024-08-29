@@ -1,0 +1,5 @@
+## [1.0] - 2024-08-24
+- Erstveröffentlichung
+- Grundlegende Struktur und Templates
+- Unterstützung für den WordPress-Customizer (Farben, Logo)
+- Implementierung von `functions.php`, `header.php`, `footer.php`, etc.

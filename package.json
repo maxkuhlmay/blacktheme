@@ -1,0 +1,25 @@
+{
+  "name": "blacktheme",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/maxkuhlmay/blacktheme.git"
+  },
+  "author": "Maximilian Kuhlmay",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maxkuhlmay/blacktheme/issues"
+  },
+  "homepage": "https://github.com/maxkuhlmay/blacktheme#readme",
+  "description": "",
+  "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^10.1.7",
+    "semantic-release": "^24.1.0"
+  }
+}

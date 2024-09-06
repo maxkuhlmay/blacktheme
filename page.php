@@ -5,21 +5,29 @@
 
 <?php get_header(); ?>
 
-<?php if (have_posts()):
-    while (have_posts()):
-        the_post();
-        the_title("<h1>", "</h1>");
-        the_content();
-    endwhile;
-else:
-    echo "<p>Seite nicht gefunden.</p>";
-endif; ?>
+<div class="content">
+    <main>
+    
+        <?php if (have_posts()):
+            while (have_posts()):
+                the_post();
+                the_title("<h1>", "</h1>");
+                the_content();
+            endwhile;
+        else:
+            echo "<p>Seite nicht gefunden.</p>";
+        endif; ?>
 
-<!-- TODO: Richtige Platzierung der Sidebar -->
-<?php if (is_active_sidebar("main-sidebar")): ?>
+    </main>
     <aside>
-        <?php dynamic_sidebar("main-sidebar"); ?>
+        <!-- TODO: Richtige Platzierung der Sidebar -->
+        <?php if (is_active_sidebar("main-sidebar")): ?>
+            <aside>
+                <?php dynamic_sidebar("main-sidebar"); ?>
+            </aside>
+        <?php endif; ?>
     </aside>
-<?php endif; ?>
+</div>
+
 
 <?php get_footer(); ?>

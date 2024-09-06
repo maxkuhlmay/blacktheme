@@ -2,7 +2,7 @@
     Datei:          home.php
     Beschreibung:   Diese Seite wird für die Blog-Startseite verwendet (oder die Startseite, wenn keine statische Seite definiert ist)
 -->
-
+    
 <?php get_header(); ?>
 
 <?php if (have_posts()):

@@ -10,8 +10,10 @@
 
 <footer>
 
-    <p>&copy; <?php echo date("Y"); ?> <?php bloginfo("name"); ?></p>
+<div class="footer-container">
 
+    <p>&copy; <?php echo date("Y"); ?> <?php bloginfo("name"); ?></p>
+    
     <nav>
         <?php wp_nav_menu([
             "theme_location" => "footer",
@@ -19,6 +21,7 @@
             "menu_class" => "navigation",
         ]); ?>
     </nav>
+</div>
 
 </footer>
 

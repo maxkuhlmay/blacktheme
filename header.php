@@ -1,3 +1,5 @@
+
+
 <?php
 /**
  * Header Template
@@ -20,6 +22,13 @@
 </head>
 <body <?php body_class(); ?>>
 
+    <!-- Showing debug information for every site -->
+    <?php if ( is_user_logged_in() ) { ?>
+        <div class="theme--debug">
+            <?php  global $template; echo basename($template); ?>
+        </div>
+    <?php } ?>
+
     <!-- Customize Farben setzen -->
     <style type="text/css">
         :root {
@@ -38,10 +47,10 @@
             --_color: var(--_secondary-color);
         }
     </style>
-    <header>
+    <header class="theme-header">
 
         <div class="header-container">
-            <div class="blog-info">
+            <div class="theme-info__container">
                 <?php if (get_theme_mod("theme_logo")): ?>
                 <div class="site-logo">
                     <img src="<?php echo esc_url(
@@ -53,8 +62,8 @@
                 <?php endif; ?>
                 <h1><?php bloginfo("name"); ?></h1>
             </div>
-            <div class="blog-navigation">
-                <nav aria-label="Hauptnavigation">
+            <div class="theme-navigation__container">
+                <nav aria-label="theme-navigation">
                     <?php wp_nav_menu([
                         "theme_location" => "primary",
                         "container" => "ul",

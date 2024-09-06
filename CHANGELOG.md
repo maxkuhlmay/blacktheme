@@ -1,3 +1,10 @@
+# [1.2.0-next.2](https://github.com/maxkuhlmay/blacktheme/compare/v1.2.0-next.1...v1.2.0-next.2) (2024-09-06)
+
+
+### Features
+
+* **refactor:** Header refactoring ([8d4da3e](https://github.com/maxkuhlmay/blacktheme/commit/8d4da3ebca59ba572cea6747e3c3920bda5e4ff9))
+
 # [1.2.0-next.1](https://github.com/maxkuhlmay/blacktheme/compare/v1.1.0...v1.2.0-next.1) (2024-08-29)
 
 

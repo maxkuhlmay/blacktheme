@@ -1,0 +1,17 @@
+{
+    "version": 2,
+    "settings": {
+        "custom": {
+            "themeName": "Black Theme"
+        },
+        "color": {
+            "palette": [
+                {
+                    "slug": "primary",
+                    "color": "#001957",
+                    "name": "Blau"
+                }
+            ]
+        }
+    }
+}

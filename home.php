@@ -5,6 +5,9 @@
     
 <?php get_header(); ?>
 
+<div class="content">
+
+<main>
 <?php if (have_posts()):
     while (have_posts()):
         the_post();
@@ -21,5 +24,10 @@ endif; ?>
     "prev_text" => __("Zurück", "theme"),
     "next_text" => __("Weiter", "theme"),
 ]); ?>
+
+</main>
+
+</div>
+
 
 <?php get_footer(); ?>

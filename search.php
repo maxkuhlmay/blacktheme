@@ -8,6 +8,11 @@
  */
 
 get_header(); ?>
+
+<div class="content">
+
+<main>
+
 <h1>Suchergebnisse für: <?php echo get_search_query(); ?></h1>
 
 <?php if (have_posts()): ?>
@@ -23,5 +28,8 @@ endwhile; ?>
 <?php else: ?>
     <p>Keine Ergebnisse gefunden.</p>
 <?php endif; ?>
+
+</main>
+</div>
 
 <?php get_footer(); ?>

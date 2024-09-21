@@ -9,7 +9,8 @@
 ?>
 
 <?php get_header(); ?>
-
+<div class="content">
+    <main>
 <?php if (have_posts()):
     while (have_posts()):
         the_post();
@@ -18,5 +19,6 @@
 else:
     echo "<p>Beitrag nicht gefunden.</p>";
 endif; ?>
-
+</main>
+</div>
 <?php get_footer(); ?>

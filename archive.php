@@ -10,6 +10,8 @@
 
 get_header(); ?>
 
+<div class="content">
+    <main>
 <h1>Archiv: <?php the_archive_title(); ?></h1>
 
 <?php if (have_posts()): ?>
@@ -24,5 +26,6 @@ get_header(); ?>
 <?php else: ?>
     <p>Keine Beiträge im Archiv gefunden.</p>
 <?php endif; ?>
-
+</main>
+</div>
 <?php get_footer(); ?>

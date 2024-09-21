@@ -1,3 +1,10 @@
+# [1.2.0-next.3](https://github.com/maxkuhlmay/blacktheme/compare/v1.2.0-next.2...v1.2.0-next.3) (2024-09-21)
+
+
+### Features
+
+* Fixed layouts ([5bf5d8d](https://github.com/maxkuhlmay/blacktheme/commit/5bf5d8db33f73466b4966c75203066d298a3abf5))
+
 # [1.2.0-next.2](https://github.com/maxkuhlmay/blacktheme/compare/v1.2.0-next.1...v1.2.0-next.2) (2024-09-06)
 
 

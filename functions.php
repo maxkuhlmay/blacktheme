@@ -11,30 +11,17 @@ function theme_enqueue_scripts()
 {
     // CSS-Dateien einbinden
 
+    wp_enqueue_style( "google-fonts", "https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap", false );
+
     wp_enqueue_style("theme-style", get_stylesheet_uri());
-    wp_enqueue_style(
-        "theme-reset",
-        get_template_directory_uri() . "/assets/css/reset.css"
-    );
+    wp_enqueue_style("theme-reset", get_template_directory_uri() . "/assets/css/reset.css");
 
-    wp_enqueue_style(
-        "theme-normalize",
-        get_template_directory_uri() . "/assets/css/normalize.css"
-    );
+    wp_enqueue_style("theme-normalize", get_template_directory_uri() . "/assets/css/normalize.css");
 
-    wp_enqueue_style(
-        "theme-custom",
-        get_template_directory_uri() . "/assets/css/custom-styles.css"
-    );
+    wp_enqueue_style("theme-custom", get_template_directory_uri() . "/assets/css/custom-styles.css");
 
     // JavaScript-Dateien einbinden
-    wp_enqueue_script(
-        "theme-script",
-        get_template_directory_uri() . "/assets/js/main.js",
-        [],
-        null,
-        true
-    );
+    wp_enqueue_script("theme-script", get_template_directory_uri() . "/assets/js/main.js", [], null, true);
 }
 
 function theme_setup()
@@ -46,12 +33,7 @@ function theme_setup()
     add_theme_support("post-thumbnails");
 
     // HTML5 Unterstützung
-    add_theme_support("html5", [
-        "search-form",
-        "comment-form",
-        "gallery",
-        "caption",
-    ]);
+    add_theme_support("html5", ["search-form", "comment-form", "gallery", "caption"]);
 
     // Unterstützung für Menüs hinzufügen
     register_nav_menus([
@@ -104,15 +86,11 @@ function theme_customize_register($wp_customize)
     ]);
 
     $wp_customize->add_control(
-        new WP_Customize_Color_Control(
-            $wp_customize,
-            "theme_foreground_color",
-            [
-                "label" => __("Vordergrundfarbe", "theme"),
-                "section" => "theme_colors",
-                "settings" => "theme_foreground_color",
-            ]
-        )
+        new WP_Customize_Color_Control($wp_customize, "theme_foreground_color", [
+            "label" => __("Vordergrundfarbe", "theme"),
+            "section" => "theme_colors",
+            "settings" => "theme_foreground_color",
+        ])
     );
 
     $wp_customize->add_setting("theme_accent_color", [

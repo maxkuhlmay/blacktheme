@@ -23,25 +23,22 @@
 <body <?php body_class(); ?>>
 
     <!-- Showing debug information for every site -->
-    <?php if ( is_user_logged_in() ) { ?>
+    <?php if (is_user_logged_in()) { ?>
         <div class="theme--debug">
-            <?php  global $template; echo basename($template); ?>
+            <?php
+            global $template;
+            echo basename($template);
+            ?>
         </div>
     <?php } ?>
 
     <!-- Customize Farben setzen -->
     <style type="text/css">
         :root {
-            --_primary-color: <?php echo esc_attr(
-                get_theme_mod("theme_primary_color")
-            ); ?>;
-            --_secondary-color: <?php echo esc_attr(
-                get_theme_mod("theme_foreground_color")
-            ); ?>;
+            --_primary-color: <?php echo esc_attr(get_theme_mod("theme_primary_color")); ?>;
+            --_secondary-color: <?php echo esc_attr(get_theme_mod("theme_foreground_color")); ?>;
 
-            --_accent-color: <?php echo esc_attr(
-                get_theme_mod("theme_accent_color")
-            ); ?>;
+            --_accent-color: <?php echo esc_attr(get_theme_mod("theme_accent_color")); ?>;
 
             --_background-color: var(--_primary-color);
             --_color: var(--_secondary-color);
@@ -53,9 +50,7 @@
             <div class="theme-info__container">
                 <?php if (get_theme_mod("theme_logo")): ?>
                 <div class="site-logo">
-                    <img src="<?php echo esc_url(
-                        get_theme_mod("theme_logo")
-                    ); ?>" alt="<?php bloginfo("name"); ?>">
+                    <img src="<?php echo esc_url(get_theme_mod("theme_logo")); ?>" alt="<?php bloginfo("name"); ?>">
                 </div>
                 <?php else: ?>
                     <!-- TODO: Blog-Info anzeigen und im Bild auch -->

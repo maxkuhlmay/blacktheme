@@ -2,18 +2,28 @@
 
 /* Allgemeine Styles für das Theme */
 body {
-    font-family: "Roboto", sans-serif;
-    background-color: var(--_background-color);
-    color: var(--_color);
+  font-family: "Roboto", monospace, sans-serif;
+  background-color: var(--_background-color);
+  color: var(--_color);
 }
 
-header .header-container, .content, footer .footer-container {
-    width: min(1024px, 95%);
+header .header-container,
+.content,
+footer .footer-container {
+  width: min(1024px, 95%);
 
-    margin-inline: auto;
+  margin-inline: auto;
 }
 
 .content {
-    margin-block: 1rem;
-    /* outline: 1px solid tomato; */
+  margin-block: 1rem;
+  /* outline: 1px solid tomato; */
 }
+
+h1, h2, h3, h4, h5, h6 {
+  margin-block: .5em 1em;
+}
+
+/* p {
+  line-height: 1.25em;
+} */

@@ -10,7 +10,7 @@
 
 get_header(); ?>
 
-<div class="content">
+<div class='content'>
     <main>
         <h1>Seite nicht gefunden</h1>
         <p>Leider konnten wir die gesuchte Seite nicht finden. Vielleicht hilft die Suche?</p>

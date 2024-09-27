@@ -47,17 +47,17 @@
     <header class="theme-header">
 
         <div class="header-container">
-            <div class="theme-info__container">
-                <?php if (get_theme_mod("theme_logo")): ?>
-                <div class="site-logo">
-                    <img src="<?php echo esc_url(get_theme_mod("theme_logo")); ?>" alt="<?php bloginfo("name"); ?>">
+            <div class="navigation">
+                <div class="logo">
+                    <?php if (get_theme_mod("theme_logo")): ?>
+                    <div class="site-logo">
+                        <img src="<?php echo esc_url(get_theme_mod("theme_logo")); ?>" alt="<?php bloginfo("name"); ?>">
+                    </div>
+                    <?php else: ?>
+                        <!-- TODO: Blog-Info anzeigen und im Bild auch -->
+                    <?php endif; ?>
+                    <span><?php bloginfo("name"); ?></span>
                 </div>
-                <?php else: ?>
-                    <!-- TODO: Blog-Info anzeigen und im Bild auch -->
-                <?php endif; ?>
-                <h1><?php bloginfo("name"); ?></h1>
-            </div>
-            <div class="theme-navigation__container">
                 <nav aria-label="theme-navigation">
                     <?php wp_nav_menu([
                         "theme_location" => "primary",
@@ -65,6 +65,8 @@
                         "menu_class" => "navigation",
                     ]); ?>
                 </nav>
+            </div>
+            <div class="controls">
                 <!--  Suche -->
                 <?php get_search_form(); ?>
             </div>

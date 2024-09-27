@@ -8,20 +8,20 @@
  */
 ?>
 
-<footer>
+<footer class="theme-footer">
 
-<div class="footer-container">
+    <div class="footer-container">
 
-    <p>&copy; <?php echo date("Y"); ?> <?php bloginfo("name"); ?></p>
-    
-    <nav>
-        <?php wp_nav_menu([
-            "theme_location" => "footer",
-            "container" => "ul",
-            "menu_class" => "navigation",
-        ]); ?>
-    </nav>
-</div>
+        <p>&copy; <?php echo date("Y"); ?> <?php bloginfo("name"); ?></p>
+        
+        <nav>
+            <?php wp_nav_menu([
+                "theme_location" => "footer",
+                "container" => "ul",
+                "menu_class" => "navigation",
+            ]); ?>
+        </nav>
+    </div>
 
 </footer>
 

@@ -1,5 +1,10 @@
 @import "./header.css";
 
+:root {
+  --_max-width: 68.75rem;
+  --_viewport-padding: 16px;
+}
+
 /* Allgemeine Styles für das Theme */
 body {
   font-family: "Roboto", monospace, sans-serif;
@@ -7,16 +12,18 @@ body {
   color: var(--_color);
 }
 
-header .header-container,
+header.theme-header .header-container,
 .content,
-footer .footer-container {
-  width: min(1024px, 95%);
+footer.theme-footer .footer-container {
+  /* width: min(1024px, 95%); */
 
+  width: min(100%, var(--_max-width));
+  padding-inline: var(--_viewport-padding);
   margin-inline: auto;
 }
 
 .content {
-  margin-block: 1rem;
+  /* margin-block: 1rem; */
   /* outline: 1px solid tomato; */
 }
 

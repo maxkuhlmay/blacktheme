@@ -1,3 +1,10 @@
+# [1.2.0-next.4](https://github.com/maxkuhlmay/blacktheme/compare/v1.2.0-next.3...v1.2.0-next.4) (2024-09-27)
+
+
+### Bug Fixes
+
+* Theme refactoring ([9dca8e6](https://github.com/maxkuhlmay/blacktheme/commit/9dca8e609f306feac7a8db31e8ff0b0fcece9f11))
+
 # [1.2.0-next.3](https://github.com/maxkuhlmay/blacktheme/compare/v1.2.0-next.2...v1.2.0-next.3) (2024-09-21)
 
 
